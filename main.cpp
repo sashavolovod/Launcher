@@ -5,24 +5,25 @@
 #include <QtCore>
 
 #include "runguard.h"
+#include "mainwindow.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-/*
+
     RunGuard guard( "servicebox.app" );
     if(guard.isAnotherRunning())
     {
-        QMessageBox::critical(0, QObject::tr("Systray"), QObject::tr("Уже запущена одна копия программы"));
-    } else
-    {
-        QMessageBox::information(0,"servicebox.app", "Можно обовляться");
-        QProcess process;
-        process.startDetached("./servicebox");
+        QMessageBox::critical(0, QObject::tr("ServiceBox"), QObject::tr("Уже запущена одна копия программы"));
     }
- */
+    else
+    {
+//        QMessageBox::information(0,"servicebox.app", "Можно обовляться");
+        MainWindow w;
+        qDebug() << QDir::currentPath();
+        //QProcess process;
+        //process.startDetached("servicebox.app.exe");
+    }
 
-
-    qDebug() << QDir::currentPath();
     return 0;
 }
