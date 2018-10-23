@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/if_package_settings_1441.ico</file>
+        <file>images/tool.png</file>
+    </qresource>
+</RCC>
