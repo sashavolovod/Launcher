@@ -20,9 +20,9 @@ int main(int argc, char *argv[])
     {
 //        QMessageBox::information(0,"servicebox.app", "Можно обовляться");
         MainWindow w;
-        qDebug() << QDir::currentPath();
-        //QProcess process;
-        //process.startDetached("servicebox.app.exe");
+
+        QProcess process;
+        process.startDetached("servicebox.app.exe");
     }
 
     return 0;
