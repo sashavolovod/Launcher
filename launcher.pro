@@ -6,12 +6,10 @@ TARGET = servicebox
 TEMPLATE = app
 
 SOURCES += main.cpp \
-    runguard.cpp \
-    downloader.cpp
+    runguard.cpp
 
 HEADERS  += \
-    runguard.h \
-    downloader.h
+    runguard.h
 
 CONFIG += c++11
 
